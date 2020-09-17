@@ -1,0 +1,337 @@
+body{ font-family: 'Open Sans'; }
+hr { border-color:#3341FF; }
+.scroll{ text-decoration:none;font-size:20px; }
+.scroll:hover{ text-decoration:none; }
+.scroll:active,.scroll:visited,.scroll:link{ text-decoration:none; }
+/*********************Navigation Bar***********************/
+
+#navb{ background-color:transparent;transition:1s ease; }
+
+.navbar-brand{
+	 margin-top:-10px;
+}
+
+.navbar-brand > div{ 
+  font-size: 16px;
+  color: #00ffff;  
+}
+
+#myNavbar > ul > li{
+	margin-left:20px;
+}
+
+#myNavbar  > ul > li > a{ 
+  font-size: 16px;
+  color: #fff;
+  
+  transition:.5s all;
+ -moz-transition:.5s all;
+ -webkit-transition:.5s all;
+}
+
+#myNavbar  > ul > li > a:hover{
+	color: #3341FF;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{ 
+    font-weight:bold;
+	background-color:transparent;
+}
+
+
+
+/**************************Progress Bar*****************************/
+#skills > .row:not(first-child){ margin:0px 30px 0px 30px; }
+.Skill_level > p{ font-size:10px;font-style:italic;color:#fff; }
+
+
+
+/****************************Skills*********************************/
+#skills h3{ color:#00ffff !important; }
+#skills .section-heading{ color:#000;padding:20px 0px; }
+
+
+
+/***************************Portfolio*****************************/
+#portfolio > .row{ margin-bottom:30px; }
+#portfolio .heading{ font-size:40px;text-align:center;margin:40px 0px 50px 0px; }
+#portfolio a:focus{ outline:0px;outline-offset:0px;text-decoration:none; }
+#portfolio a:hover{ outline:0px;outline-offset:0px;text-decoration:none; }
+.subheading{ font-size:25px; }
+.small_img{ margin:0px 20px 0px 20px;width:200px;height:150px; }
+#portfolio .txt{ margin:40px 0px 40px 0px; }
+
+/****************************Header*************************/
+header,#skills{
+	/* The image used */
+    background-image: url("../images/background1.jpg");
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro > h1{
+	line-height:200px;
+	text-align:center;
+	transition:1s ease;
+}
+
+#intro > h1:hover{
+	color:#fff;
+}
+
+
+/**************************Welcome note*************************/
+.welcome_note{ border:0px solid red; }
+.welcome_note > p{ margin:50px auto 50px auto;line-height:30px;font-size:20px; }
+.my_img > img{margin:50px auto 50px auto;display:block;border-radius:50px;height:280px;width:350px;}
+
+
+
+/***************************************START SCROLL TO TOP SECTION******************************************/
+
+   #circle{
+     border:0px solid #000;
+     position:fixed;
+     width:50px;
+     right:-60px;
+     bottom:40px;
+     height:50px;
+     cursor:pointer;
+    
+     -webkit-border-radius:25px;
+     -moz-border-radius:25px;
+     -o-border-radius:25px;
+     -ms-border-radius:25px;
+     border-radius:25px;
+    
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+
+     overflow: hidden;
+   }
+
+   #circle:hover{
+       background-color:#F0F5F5;
+   }
+
+   #circle:hover .shape{
+       border-color:#000000;
+   }
+
+   .shape1{
+     top: -16px;
+   }
+
+   .shape2{
+     top: -5px;
+   }
+   
+   #circle:hover .shape1{
+       top: 18px;
+   }
+
+   #circle:hover .shape2{
+       top: 40px;
+   }
+   
+   /*arrow*/
+   .shape{ 
+   	position: relative;
+   	border-right:5px solid red;
+        border-bottom:5px solid red;
+        width:20px;
+        height:20px;
+
+        transform: rotate(-134deg);
+        -webkit-transform: rotate(-134deg);
+        -moz-transform: rotate(-134deg);
+        -o-transform: rotate(-134deg);
+        -ms-transform: rotate(-134deg);
+        
+        transition:all 0.5s ease;
+        -webkit-transition:all 0.5s ease;
+        -moz-transition:all 0.5s ease;
+        -o-transition:all 0.5s ease;
+        -ms-transition:all 0.5s ease;
+        
+         margin-left: 15px;
+   }
+
+   
+#scrollTopSmallRes span.glyphicon {
+    font-size:50px;
+    cursor:pointer;
+}
+
+/***************************************END SCROLL TO TOP SECTION******************************************/
+
+
+/*********************************************Progress Bar***************************************/
+/* 
+Set the container for the bar
+*/
+.bar {
+	height:40px;
+	padding:10px;
+	background-color:rgba(81, 0, 255, 0.5);/*rgba(0,0,0,.1);*/
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	-ms-border-radius:25px;
+	border-radius:20px;
+	-webkit-box-shadow:0 1px 0 rgba(255,255,255,.03),inset 0 1px 0 rgba(0,0,0,.1);
+	-moz-box-shadow:0 1px 0 rgba(255,255,255,.03),inset 0 1px 0 rgba(0,0,0,.1);
+	-ms-box-shadow:0 1px 0 rgba(255,255,255,.03),inset 0 1px 0 rgba(0,0,0,.1);
+	box-shadow:0 1px 0 rgba(255,255,255,.03),inset 0 1px 0 rgba(0,0,0,.1);
+}
+
+/* 
+This is the actual bar with stripes
+*/	
+.bar > .progress-bar {
+	display:inline-block;
+	height:20px;
+	width:0%;
+	max-width:100%;
+	line-height:20px;
+	border:1px solid #ff9a1a;
+	border-bottom-color:#ff6201;
+	background-color:#d3d3d3;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-ms-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	background-image:
+		-webkit-linear-gradient(
+		-45deg,
+		rgba(255, 154, 26, 1) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 154, 26, 1) 50%,
+		rgba(255, 154, 26, 1) 75%,
+		transparent 75%,
+		transparent
+	);
+	background-image:
+		-moz-linear-gradient(
+		-45deg,
+		rgba(255, 154, 26, 1) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 154, 26, 1) 50%,
+		rgba(255, 154, 26, 1) 75%,
+		transparent 75%,
+		transparent
+	);
+	background-image:
+		-ms-linear-gradient(
+		-45deg,
+		rgba(255, 154, 26, 1) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 154, 26, 1) 50%,
+		rgba(255, 154, 26, 1) 75%,
+		transparent 75%,
+		transparent
+	);
+	background-image:
+		linear-gradient(
+		-45deg,
+		rgba(255, 154, 26, 1) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 154, 26, 1) 50%,
+		rgba(255, 154, 26, 1) 75%,
+		transparent 75%,
+		transparent
+	);
+	-webkit-background-size:50px 50px;
+	-moz-background-size:50px 50px;
+	-ms-background-size:50px 50px;
+	background-size:50px 50px;
+	-webkit-animation:move 2s linear infinite;
+	-moz-animation:move 2s linear infinite;
+	-ms-animation:move 2s linear infinite;
+	animation:move 2s linear infinite;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-ms-border-radius:20px;
+	border-radius:20px;
+	overflow: hidden;
+	-webkit-box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+	-moz-box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+	-ms-box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+	box-shadow:inset 0 10px 0 rgba(255,255,255,.2);
+}
+
+/*
+Animate the stripes
+*/	
+@-webkit-keyframes move{
+  0% {
+  	background-position: 0 0;
+  }
+  100% {
+  	background-position: 50px 50px;
+  }
+}	
+@-moz-keyframes move{
+  0% {
+  	background-position: 0 0;
+  }
+  100% {
+  	background-position: 50px 50px;
+  }
+}	
+@-ms-keyframes move{
+  0% {
+  	background-position: 0 0;
+  }
+  100% {
+  	background-position: 50px 50px;
+  }
+}	
+@keyframes move{
+  0% {
+  	background-position: 0 0;
+  }
+  100% {
+  	background-position: 50px 50px;
+  }
+}
+
+/***********************************Contact**********************************/
+.contact { text-align:center; }
+.contact .heading{ font-size:35px;margin:40px 0px 50px 0px; }
+.contact .heading i{ vertical-align:middle; }
+.contact .subheading { font-size:25px;padding-top:50px; }
+.contact .email { font-size:25px;padding-top:20px; }
+.contact .email i{ vertical-align:middle; }
+
+#location{ width:100%;border:0px solid red;height:400px;margin-top:40px; }
+
+
+
+/***************************************Footer************************************/
+footer{
+	background:#000;
+	border:1px solid black;
+}
+
+footer > p{ text-align:center;color:#fff;padding:20px; }
+

@@ -1,0 +1,44 @@
+@media only screen and (max-width:993px){
+
+	#myNavbar > ul > li{
+		margin-left:0px;
+		margin-top:20px;
+	}
+	
+	#navb{ z-index:1; }
+}
+
+@media only screen and (max-width:501px){
+	.contact .email { font-size:20px; }
+	
+	#myNavbar > ul > li{
+		margin-left:0px !important;
+		margin-top:20px;
+	}
+
+	header{ max-height:200px; }
+	
+	#intro > h1{ font-size:25px;position:absolute;top:40px;left:0px;right:0px; }
+	
+	#intro{ margin:10px auto; }
+	
+	#welcome .my_img > img{ margin:30px auto 0px auto;display:block;border-radius:20px;height:280px;width:350px; }
+	
+	.welcome_note > p{ font-size:14px;line-height:25px; }
+	
+	#navb{ z-index:1; }
+
+	#skills h3{ font-size:20px; }
+	
+}
+
+@media only screen and (max-width:320px){
+	#welcome .my_img > img{ height:250px;width:330px;margin-top:30px; }
+	
+	#myNavbar > ul > li{
+		margin-left:0px !important;
+		margin-top:20px;
+	}
+
+	.contact .email { font-size:17px; }
+}
